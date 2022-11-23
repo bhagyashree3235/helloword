@@ -17,17 +17,13 @@ pipeline {
           stage('Hii') {
             steps {
                 echo 'Hiii'
-             
+             mail bcc: '', body: 'success', cc: '', from: '', replyTo: '', subject: 'hii', to: 'divyasow98@gmail.com'
             }
         }
         
       
     }
-      post{
-        success{
-        mail bcc: '', body: 'success', cc: '', from: '', replyTo: '', subject: 'hii', to: 'divyasow98@gmail.com'
-        }
-        }
+
 }
 
 
