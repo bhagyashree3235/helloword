@@ -43,7 +43,17 @@ pipeline {
     subject: "jenkins build:${currentBuild.currentResult}: ${env.JOB_NAME}: with build number: ${env.BUILD_NUMBER}",
     body: "${currentBuild.currentResult}: Job ${env.JOB_NAME}\nMore Info can be found here: ${env.BUILD_URL}"
     }
- 
+ aborted{
+     emailext to: 'divyagowda8393@gmail.com',
+    subject: "jenkins build:${currentBuild.currentResult}: ${env.JOB_NAME}: with build number: ${env.BUILD_NUMBER}",
+    body: "${currentBuild.currentResult}: Job ${env.JOB_NAME}\nMore Info can be found here: ${env.BUILD_URL}"
+ }
+
+ fixed{
+     emailext to: 'divyagowda8393@gmail.com',
+    subject: "jenkins build:${currentBuild.currentResult}: ${env.JOB_NAME}: with build number: ${env.BUILD_NUMBER}",
+    body: "${currentBuild.currentResult}: Job ${env.JOB_NAME}\nMore Info can be found here: ${env.BUILD_URL}"
+ }
 
     }
 
