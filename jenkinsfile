@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+             
+            }
+        }
+          stage('word') {
+            steps {
+                echo ' World'
+             
+            }
+        }
+          stage('Hii') {
+            steps {
+                echo 'Hiii'
+             
+            }
+        }
+        
+        post{
+        Success{
+        mail bcc: '', body: 'On request ', cc: 'divyasow6@gmail.com,divyagowdadivya238@gmail.com', from: '', replyTo: '', subject: 'jenkins successfulll', to: 'divyagowda8393@gmail.com'
+        }
+        }
+    }
+}
+
+
