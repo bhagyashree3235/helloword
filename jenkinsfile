@@ -25,7 +25,7 @@ pipeline {
     }
       post{
         success{
-        mail bcc: '', body: 'On request ', cc: 'divyasow6@gmail.com,divyagowdadivya238@gmail.com', from: '', replyTo: '', subject: 'jenkins successfulll', to: 'divyagowda8393@gmail.com'
+        mail bcc: '', body: 'On request ', cc: 'divyasow6@gmail.com', from: '', replyTo: '', subject: 'jenkins successfulll', to: 'divyagowda8393@gmail.com'
         }
         }
 }
