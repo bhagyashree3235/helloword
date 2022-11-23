@@ -11,7 +11,7 @@ pipeline {
           stage('word') {
             steps {
                 echo ' World'
-             
+             mail bcc: '', body: 'Buddy', cc: '', from: '', replyTo: '', subject: 'Hii', to: 'divyagowda8393@gmail.com'
             }
         }
           stage('Hii') {
