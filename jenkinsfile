@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                ec ho 'Hello World'
+                echo 'Hello World'
             
             }
         }
@@ -16,7 +16,7 @@ pipeline {
         }
           stage('Hii') {
             steps {
-                echo 'Hiii'
+                echo Hii i'
                 
 
             }
