@@ -17,7 +17,7 @@ pipeline {
           stage('Hii') {
             steps {
                 echo 'Hiii'
-             emailext body: 'Hello', cc: '', from: '', replyTo: '', subject: 'hii', to: 'divyagowdadivya238@gmail.com,divyagowda 8393'
+
             }
         }
         
