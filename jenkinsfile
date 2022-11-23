@@ -10,13 +10,14 @@ pipeline {
         }
           stage('word') {
             steps {
-                e cho ' World'
+                echo ' World'
             
             }
         }
           stage('Hii') {
             steps {
                 echo 'Hiii'
+                sh 
 
             }
         }
