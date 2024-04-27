@@ -49,6 +49,8 @@ pipeline {
             }
             steps {
                 script {
+                    // Clone GitHub repository
+                    git 'https://github.com/bhagyashree3235/helloword.git'
                     // Apply Kubernetes deployment YAML
                     sh "mkctl apply -f deployment.yml --namespace=${KUBE_NAMESPACE}"
                 }
