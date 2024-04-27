@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hellowordapp-deployment
+spec:
+  replicas: 1 # Number of replicas/instances of your application
+  selector:
+    matchLabels:
+      app: hellowordapp
+  template:
+    metadata:
+      labels:
+        app: hellowordapp
+    spec:
+      containers:
+      - name: hellowordapp-container
+        image: bhagyashreep/helloword_app:latest # Docker image name and tag
+        ports:
+        - containerPort: 3000 # Port on which your application listens
