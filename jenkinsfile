@@ -52,7 +52,7 @@ pipeline {
                     // Clone GitHub repository
                     git 'https://github.com/bhagyashree3235/helloword.git'
                     // Apply Kubernetes deployment YAML
-                    sh "kubectl apply -f deployment.yml --namespace=${KUBE_NAMESPACE}"
+                    sh "kubectl apply -f deployment.yml --namespace=${KUBE_NAMESPACE} --validate=false"
                 }
             }
         }
