@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hellowordapp-deployment
 spec:
-  replicas: 3 # Number of replicas/instances of your application
+  replicas: 1 # Number of replicas/instances of your application
   selector:
     matchLabels:
       app: hellowordapp
